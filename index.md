@@ -21,35 +21,35 @@ I have research experience in Data Mining, Computer Vision/Image Processing and 
         - Advised by Prof Rakesh Nagi, Pof Jugal Garg
     - Graduate Teaching Assistant, *UIUC*
         - Current - IE310 - Deterministic Models in Optimization
-        - Past - SE101, BIOE360 <br>
+        - Past - SE101, BIOE360 
 
-
+<br>
 - May 2022 - August 2022
     - Project Assistant, *O’Neil Risk Consulting & Algorithmic Auditing*
-        - Advised by Cathy O'Neil, Jacob Appel  <br>
+        - Advised by Cathy O'Neil, Jacob Appel
 
-
+<br>
 
 - July 2020 - August 2021
     - Data Analyst, *Lowe's India*
-        - Team - Supply Chain Analytics, Data Analytics & Computational Intelligence (DACI)  <br>
+        - Team - Supply Chain Analytics, Data Analytics & Computational Intelligence (DACI) 
 
-
+<br>
 
 - May 2019 - July 2019
     - Research Intern, *IIT Mandi*
-        - Advised by:  Dr. Junrack Kim, Dr Sharad Kumar Gupta  <br>
+        - Advised by:  Dr. Junrack Kim, Dr Sharad Kumar Gupta 
 
-
+<br>
 
 - December 2018- Jan 2019
-    - Software Development Intern, *Carabiner Tech.*  <br>
+    - Software Development Intern, *Carabiner Tech.*
 
-
+<br>
 
 - May 2018 - July 2018
     - Indian Academy of Sciences Research Fellow, *IIT Mandi*
-        - Advised by: Dr Sharad Kumar Gupta, Dr. Dericks P. Shukla <br>
+        - Advised by: Dr Sharad Kumar Gupta, Dr. Dericks P. Shukla
 
 
     
