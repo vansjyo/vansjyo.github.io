@@ -7,13 +7,15 @@
 #
 layout: home
 ---
+<p align="center">
+    <img src="./assets/images/ME.png" alt="Image" style="border-radius:50%; width:30%;margin:5%;" />
+</p>
 
 I am a second year year graduate student at University Of Illinois Urbana-Champaign focussing broadly on problems in Operations Research. I am currently working on fair division in Algorthmic Game Theory, advised by prof Rakesh Nagi and Prof Jugal Garg.
 
 Apart from Operations Research and Algorithm Development, I am interested in Quantitative Finance and markets.
 
 I have research experience in Data Mining, Computer Vision/Image Processing and Machine/Deep Learning. During my undergard, I did some Web Development in NodeJs/React as well.
-
 
 <br>
 <br>
