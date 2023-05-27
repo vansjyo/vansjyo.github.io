@@ -38,5 +38,7 @@ However, in 2006, the supply became too high compared to the demand and the hous
 ### References:
 * [https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp)
 * [https://www.fhfa.gov/about-fannie-mae-freddie-mac](https://www.fhfa.gov/about-fannie-mae-freddie-mac)
+* [https://en.wikipedia.org/wiki/Synthetic_CDO](https://en.wikipedia.org/wiki/Synthetic_CDO)
+* [https://www.fanniemae.com/about-us/esg/learn-about-our-business](https://www.fanniemae.com/about-us/esg/learn-about-our-business)
 
 PS: I write these posts for my own reference and not as a reference for people trying to learn more about the topic. 
