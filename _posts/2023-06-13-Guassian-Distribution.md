@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Gaussian Distrbution?"
-categories: project
+categories: post
 ---
 
 Why is the Gaussian distrbution observed in chaotic situations? Why is it the most used in predictive modelling methods? We see like normal distrbutions in asset price movements, population statictics. In fact, the simplest (yet most widely used) method of linear regression is based on assumptions of normal distrbution of residuals and features. 
