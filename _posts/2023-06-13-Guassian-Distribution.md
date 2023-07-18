@@ -4,7 +4,7 @@ title: "Why Gaussian Distrbution?"
 categories: post
 ---
 
-Why is the Gaussian distrbution observed in chaotic situations? Why is it the most used in predictive modelling methods? We see like normal distrbutions in asset price movements, population statictics. In fact, the simplest (yet most widely used) method of linear regression is based on assumptions of normal distrbution of residuals and features. 
+Why is the Gaussian distrbution observed in chaotic situations? Why is it the most used in predictive modelling methods? We see like normal distrbutions in asset price movements, population statictics, etc. In fact, the simplest (yet most widely used) method of linear regression is based on assumptions of normal distrbution of residuals and features. The answer lies is the central limit theorem. We will not cover that here, and instead touch upon how the Gaussian Distrbution was derived,
 
 But why does this probability distribution so special compare to other functions that look similar? John Hershel came up with this function in 1850 while trying to design a probability distribution function. Let's take the example of a dart board and let's try to define a Probability Distribution Function (PDF) of a dart hitting a particular spot. 
 
@@ -51,7 +51,3 @@ Derivations of functions like these are not uncommon, wherein some inherent fact
 
 
 This is inspired by the video from 3Blue1Brown about the signifciance of $\pi$ in a Guassian/Normal Distribution. I just wanted to check how well I understood it and how would I explain it to someone from my perspective, if I didnt have that video.
-
-
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
-
