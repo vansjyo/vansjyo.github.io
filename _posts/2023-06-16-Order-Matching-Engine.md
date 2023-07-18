@@ -55,10 +55,19 @@ Lastly, the Orderbook object is the object containing all the limit objects at t
 
 After this, most things should be self explanatory. You can define methods for cancel and adding order. For this to be more compact and understandable, I iterated over several versions and came up with a final implementation where I felt there was most resusability of code. For instance, when you cancel an order, the orderbook provides the interface `cancel order` function, which udpated best Sell/buy and the array, we then call the `remove order from queue` fucntion which is a method of the limit object, we then call the cancel order fucntion within the Order object which changes the status and other attributes of the order such as action date and uupdates the next, prev pointers to null.
 
+## Matching Engine
+
+The OME accepts only limit orders for now, but can easily be extended to market orders, which we will be attempting in the upcoming verions. The logic is simply this: suppose there is a buy limit order is placed at price `p` and the best sell is at `bs`. If `p` > `bs`, match all sell orders starting from `bs` up until `p` (inclusive) in the order of increasing limit price till the quantity of the buy order at `p` is satisfied. If the existing sell order until price `p` are not able to completely fulfill the incoming buy order, the best buy updates to `p` and the best sell udpates to `p + 0.01`. Essentially, limit order in buy side means match all sell orders lower or equal to the limit price of the buy order, if any (when `p` < `bs`).  
+
 
 ## Simulating the market feed
 
 So I couldn't find a market simulator, I build one. I used pesudo random generators for simulating a market around a fixed price. So I uniformly pick price from a range with fixed mean and distance, and arbitrary order size and order type. This is very simplified but does the job of testing your order matching engine and fills the order book suffciciently. I store these order in a CSV and then read the CSV sequentially. As an extension, I am planning  to build a better simulator for market feed using moving average pricing and more involved distrbution to pick prices from.
+
+## Output 
+
+The logs of all add, match and cancel orders are logged into a log file with a time stamp with microsecond granularity. The output when there is a `print order book` call looks like this:
+
 
                                     ________ Sell ________ 
 
@@ -91,9 +100,8 @@ So I couldn't find a market simulator, I build one. I used pesudo random generat
     78.47         1          96         
 
 ### References:
-* [https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp)
-* [https://www.fhfa.gov/about-fannie-mae-freddie-mac](https://www.fhfa.gov/about-fannie-mae-freddie-mac)
-* [https://en.wikipedia.org/wiki/Synthetic_CDO](https://en.wikipedia.org/wiki/Synthetic_CDO)
-* [https://www.fanniemae.com/about-us/esg/learn-about-our-business](https://www.fanniemae.com/about-us/esg/learn-about-our-business)
+* [https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+Globex+Matching+Algorithm+Steps#CMEGlobexMatchingAlgorithmSteps-TOP](https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+Globex+Matching+Algorithm+Steps#CMEGlobexMatchingAlgorithmSteps-TOP)
+* [https://quant.stackexchange.com/questions/3783/what-is-an-efficient-data-structure-to-model-order-book](https://quant.stackexchange.com/questions/3783/what-is-an-efficient-data-structure-to-model-order-book)
+* [https://web.archive.org/web/20110219163448/http://howtohft.wordpress.com/2011/02/15/how-to-build-a-fast-limit-order-book/](https://web.archive.org/web/20110219163448/http://howtohft.wordpress.com/2011/02/15/how-to-build-a-fast-limit-order-book/)
 
 PS: I write these posts for my own reference and not as a reference for people trying to learn more about the topic. 
