@@ -97,7 +97,33 @@ The logs of all add, match and cancel orders are logged into a log file with a t
     78.53         1          132        
     78.50         1          29         
     78.49         2          735        
-    78.47         1          96         
+    78.47         1          96    
+
+This snapshot shows the log of the order matching engine qs orders are coming in at a granularity of 
+<br>
+
+    2023-07-04 14:38:36.979:864 -> Sell Order 1 added to the Queue successfully.
+    2023-07-04 14:38:36.979:947 -> Buy Order 2 added to the Queue successfully.
+    2023-07-04 14:38:36.980:048 -> Sell Order 3 added to the Queue successfully.
+    2023-07-04 14:38:36.980:081 -> Sell Order 4 added to the Queue successfully.
+    2023-07-04 14:38:36.980:106 -> Buy Order 5 added to the Queue successfully.
+    2023-07-04 14:38:36.980:134 -> Buy Order 6 added to the Queue successfully.
+    2023-07-04 14:38:36.980:163 -> Buy Order 7 added to the Queue successfully.
+    2023-07-04 14:38:36.980:194 -> Order 6 cancelled successfully.
+    2023-07-04 14:38:36.980:203 -> Order 6 removed from the Queue successfully.
+    2023-07-04 14:38:36.980:232 -> Sell Order 8 added to the Queue successfully.
+    2023-07-04 14:38:36.980:265 -> Sell Order 9 added to the Queue successfully.
+    2023-07-04 14:38:36.980:297 -> Buy Order 10 added to the Queue successfully.
+    2023-07-04 14:38:36.980:331 -> Sell Order 11 added to the Queue successfully.
+    2023-07-04 14:38:36.980:367 -> Sell Order 12 added to the Queue successfully.
+    2023-07-04 14:38:36.980:402 -> Sell Order 13 added to the Queue successfully.
+    2023-07-04 14:38:36.980:436 -> Sell Order 14 added to the Queue successfully.
+    2023-07-04 14:38:36.980:472 -> Order 10 cancelled successfully.
+    2023-07-04 14:38:36.980:481 -> Order 10 removed from the Queue successfully.
+    2023-07-04 14:38:36.980:516 -> Buy Order 15 added to the Queue successfully.
+    2023-07-04 14:38:36.980:554 -> Buy Order 16 added to the Queue successfully.
+    2023-07-04 14:38:36.980:592 -> Sell Order 17 added to the Queue successfully.
+    2023-07-04 14:38:36.980:627 -> Sell Order 18 added to the Queue successfully.     
 
 ### References:
 * [https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+Globex+Matching+Algorithm+Steps#CMEGlobexMatchingAlgorithmSteps-TOP](https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+Globex+Matching+Algorithm+Steps#CMEGlobexMatchingAlgorithmSteps-TOP)
